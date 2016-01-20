@@ -2,26 +2,54 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="player.css">
+	<link rel="stylesheet" type="text/css" href="css/player.css">
+	<link rel="stylesheet" href="css/dragula.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="player.js"></script>
+	<script src="stylesheets/dragula.js"></script>
 	<meta charset="UTF-8">
 </head>
 <body>
+
 	<div class="container">
-		<div class="playing_div">
-			<div class="playing_song_div">
+		<div id="playing" class="playing_div">
+			<div class="control_buttons_div">
+				<a href="" class="pause_button"><img class="button_images" src="pause_button.png" alt=""></a>
+				<a href="" class="play_button"><img class="button_images" src="play_button.png" alt=""></a>
+				<a href="" class="stop_button"><img class="button_images" src="stop_button.png" alt=""></a>
+			</div><div class="playing_song_div">
 				<h3 class="playing_song"></h3>
 				<audio preload="auto" tabindex="0" type="audio/mpeg">
 				<source name="" type="audio/mp3" src="The Lion King - Circle of Life.mp3">
 				</audio>
 			</div>
-			<hr>
-			<a href="" class="pause_button"><img class="button_images" src="pause_button.png" alt=""></a>
-			<a href="" class="play_button"><img class="button_images" src="play_button.png" alt=""></a>
-			<a href="" class="stop_button"><img class="button_images" src="stop_button.png" alt=""></a>
 		</div>
-		<div class="ondeck_div">
+		<div id="left" class="ondeck_div">
+			<div class="ondeck_song">
+				
+			</div>
+			<div class="ondeck_song">
+				
+			</div>
+			<div class="ondeck_song">
+				
+			</div>
+			<div class="ondeck_song">
+				
+			</div>
+			<div class="ondeck_song">
+				
+			</div>
+			<div class="ondeck_song">
+				
+			</div>
+			<div class="ondeck_song">
+				
+			</div>
+			<div class="ondeck_song">
+				
+			</div>
+		</div><div id="right" class="playlists_div">
 			
 		</div>
 	</div>

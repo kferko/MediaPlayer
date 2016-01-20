@@ -48,6 +48,9 @@ $(document).ready(function(){
 		e.preventDefault();
 		my_jukebox.stop();
 	});
+
+// Dragula allows for easy drag and drop from one container to another.
+dragula([document.querySelector('#left'), document.querySelector('#right')]);
 });
 
 
