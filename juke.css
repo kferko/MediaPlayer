@@ -1,0 +1,18 @@
+.tracks,audio {
+	width: 600px;
+	padding: 20px;
+}
+.active a {
+	color: blue;
+	text-decoration: none;
+}
+li a {
+	color: red;
+	background: lightgrey;
+	padding: 5px;
+	display: block;
+	text-decoration:none;
+}
+li a:hover {
+	text-decoration:none;
+}
