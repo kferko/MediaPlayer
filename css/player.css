@@ -1,0 +1,51 @@
+.background_and_hover, .ondeck_song {
+  background-color: #323131; }
+
+.background_and_hover:hover, .ondeck_song:hover {
+  background-color: #1e3737; }
+
+.container {
+  width: 600px;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: auto; }
+
+.control_buttons_div {
+  float: left;
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: #5F67D7; }
+
+.playing_div {
+  background-color: #4FA38E;
+  width: 100%;
+  height: 150px; }
+
+.ondeck_div {
+  background-color: #BF4A45;
+  display: inline-block;
+  height: 100%;
+  width: 30%; }
+
+.playlists_div {
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  background-color: #FF9C50;
+  opacity: 0.5; }
+
+.playing_song_div {
+  display: inline-block;
+  height: 100%;
+  width: 70%; }
+
+.button_images {
+  width: 50px; }
+
+.ondeck_song {
+  width: 100%;
+  height: 10%; }
+
+/*# sourceMappingURL=player.css.map */
