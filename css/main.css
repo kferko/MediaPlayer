@@ -3,7 +3,7 @@
   background-size: contain; }
 
 .container {
-  width: 900px;
+  width: 50%;
   margin: 0 auto; }
 
 .row {
@@ -35,9 +35,15 @@
   width: 12.5%;
   float: left; }
 
-.inline-rectangle {
+.inline-rect {
   height: 50%;
   width: 50%;
+  text-align: center;
+  display: inline-block; }
+
+.inline-rect-full {
+  height: 100%;
+  width: 100%;
   text-align: center;
   display: inline-block; }
 
@@ -83,12 +89,69 @@
   .container {
     width: 350px; } }
 .outline {
-  outline: solid #2D643F 10px; }
+  box-shadow: 0 0 1pt 3pt #2D643F; }
 
-.h-200 {
-  height: 200px; }
+.h-150 {
+  height: 150px; }
 
-.h-600 {
-  height: 600px; }
+.h-400 {
+  height: 400px; }
+
+.ul-none {
+  padding: 0;
+  list-style: none; }
+
+.r-button {
+  border: none;
+  font-size: 1.5em;
+  font-family: helvetica, serif;
+  display: inline-block;
+  padding: 10px;
+  box-shadow: 0 3pt black;
+  background-color: #2D643F;
+  border-radius: 15px;
+  position: relative; }
+  .r-button:hover {
+    cursor: pointer; }
+  .r-button:active {
+    top: 2px;
+    box-shadow: 0 3pt #2D643F; }
+  .r-button:focus {
+    outline: 0; }
+
+.s-button {
+  border: none;
+  font-size: 1.5em;
+  font-family: helvetica, serif;
+  display: inline-block;
+  padding: 10px;
+  box-shadow: 0 3pt black;
+  background-color: #2D643F;
+  position: relative; }
+  .s-button:hover {
+    cursor: pointer; }
+  .s-button:active {
+    top: 2px;
+    box-shadow: 0 3pt #2D643F; }
+  .s-button:focus {
+    outline: 0; }
+
+.c-button {
+  border: none;
+  font-size: 1.5em;
+  font-family: helvetica, serif;
+  display: inline-block;
+  padding: 10px;
+  box-shadow: 0 3pt black;
+  background-color: #2D643F;
+  border-radius: 50%;
+  position: relative; }
+  .c-button:hover {
+    cursor: pointer; }
+  .c-button:active {
+    top: 2px;
+    box-shadow: 0 3pt #2D643F; }
+  .c-button:focus {
+    outline: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,12 +3,11 @@
 	padding: 20px;
 }
 .active a {
-	color: blue;
+	color: #56FC8C;
 	text-decoration: none;
 }
 li a {
-	color: red;
-	background: lightgrey;
+	color: white;
 	padding: 5px;
 	display: block;
 	text-decoration:none;

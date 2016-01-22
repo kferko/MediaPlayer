@@ -6,36 +6,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="juke.js"></script>
+	<script type="text/javascript" src="javascript/juke.js"></script>
+	<script type="text/javascript" src="javascript/player.js"></script>
+	<script type="text/javascript" src="javascript/dragula.js"></script>
 	<link rel="stylesheet" type="text/css" href="juke.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container outline b-radius">
 		<div style="overflow: auto;" class="row outline">
-			<div class="column-25 outline h-200 bg-image play_button">
+			<div class="column-25 outline h-150 bg-image play_button">
 
 			</div>
-			<div class="column-75 outline h-200">
-				<div style="vertical-align: middle;" class="inline-rectangle outline">
-					<audio id="audio" autoplay preload="auto" tabindex="0" controls="" type="audio/mpeg">
+			<div class="column-75 outline h-150">
+				<div style="margin: 6%;" class="inline-rect outline">
+					<audio id="audio" autoplay preload="auto" tabindex="0" type="audio/mpeg">
 						<source type="audio/mp3" src="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d2t02.mp3">
 					</audio>
 				</div>
 			</div>
 		</div>
 		<div style="overflow: auto;" class="row outline">
-			<div class="column-25 outline h-600">
-				<ul class="tracks">
-					<li class="active"><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d2t02.mp3">Damn Sam - Ryan Adams</a></li>
-					<li><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t07.mp3">She Wants To Play Hearts - Ryan Adams</a></li>
-					<li><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t10.mp3">Harder Now That Its Over - Ryan Adams</a></li>
+			<div class="column-25 outline h-400">
+				<ul class="ul-none">
+					<li class="active inline-rect-full">
+						<a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d2t02.mp3">Damn Sam - Ryan Adams</a>
+					</li>
+					<li class="inline-rect-full outling">
+						<a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t07.mp3">She Wants To Play Hearts - Ryan Adams</a>
+					</li>
+					<li class="inline-rect-full outling">
+						<a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t10.mp3">Harder Now That Its Over - Ryan Adams</a>
+					</li>
 				</ul>
 			</div>
-			<div class="column-75 outline h-600">
-				<div class="column-50 outline h-600">
+			<div class="column-75 outline h-400">
+				<div class="column-50 outline h-400">
 
 				</div>
-				<div class="column-50 outline h-600">
+				<div class="column-50 outline h-400">
 
 				</div>
 			</div>
