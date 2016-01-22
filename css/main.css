@@ -1,0 +1,94 @@
+.play_button {
+  background: url("../download.svg") no-repeat center;
+  background-size: contain; }
+
+.container {
+  width: 900px;
+  margin: 0 auto; }
+
+.row {
+  overflow: auto;
+  width: 100%;
+  clear: both; }
+
+.column-100 {
+  width: 100%;
+  float: left;
+  text-align: center; }
+
+.column-75 {
+  width: 75%;
+  float: left;
+  text-align: center; }
+
+.column-50 {
+  width: 50%;
+  float: left;
+  text-align: center; }
+
+.column-25 {
+  width: 25%;
+  float: left;
+  text-align: center; }
+
+.column-12half {
+  width: 12.5%;
+  float: left; }
+
+.inline-rectangle {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  display: inline-block; }
+
+.image-100 {
+  width: 100%; }
+
+.image-75 {
+  width: 75%; }
+
+.image-50 {
+  width: 50%; }
+
+.image-25 {
+  width: 25%; }
+
+@media all and (max-width: 900px) {
+  .column-50 {
+    width: 100%;
+    float: left; }
+
+  .column-25 {
+    width: 50%;
+    float: left; }
+
+  .column-75 {
+    width: 100%; }
+
+  .column-12half {
+    width: 25%;
+    float: left; }
+
+  .container {
+    width: 600px; } }
+@media all and (max-width: 600px) {
+  .column-25 {
+    width: 100%;
+    float: left; }
+
+  .column-12half {
+    width: 50%;
+    float: left; }
+
+  .container {
+    width: 350px; } }
+.outline {
+  outline: solid #2D643F 10px; }
+
+.h-200 {
+  height: 200px; }
+
+.h-600 {
+  height: 600px; }
+
+/*# sourceMappingURL=main.css.map */

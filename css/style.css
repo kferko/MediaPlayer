@@ -1,0 +1,133 @@
+body,
+html {
+  margin: 0;
+  padding: 0; }
+
+/* set the container */
+.container {
+  margin: 0 auto;
+  max-width: 60%;
+  overflow: hidden;
+  position: relative; }
+
+/*start with column first*/
+.col {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important; }
+
+/* set row and make clear all */
+.row {
+  clear: all; }
+
+@media all and (min-width: 0px) and (max-width: 419px) {
+  .col {
+    margin-left: 1%;
+    padding: 0 1%; }
+
+  .row .col:first-child {
+    margin-left: 0; }
+
+  /* set widths of bars/columns*/
+  .bar_1 {
+    width: 49.5%; }
+
+  .bar_2,
+  .col {
+    width: 100%;
+    margin-left: 0; } }
+@media all and (min-width: 420px) and (max-width: 859px) {
+  .col {
+    margin-left: 1%;
+    padding: 0 1%; }
+
+  .row .col:first-child {
+    margin-left: 0; }
+
+  /* set widths of bars/columns*/
+  .bar_1 {
+    width: 24.25%; }
+
+  .bar_2 {
+    width: 49.5%; }
+
+  .bar_3 {
+    width: 74.75%; }
+
+  .bar_4 {
+    margin-left: 0;
+    width: 100%; } }
+@media all and (min-width: 860px) and (max-width: 1359px) {
+  .col {
+    margin-left: 1%;
+    padding: 0 1%; }
+
+  .row .col:first-child {
+    margin-left: 0; }
+
+  /* set widths of bars/columns*/
+  .bar_1 {
+    width: 11.625%; }
+
+  .bar_2 {
+    width: 24.25%; }
+
+  .bar_3 {
+    width: 36.875%; }
+
+  .bar_4 {
+    width: 49.5%; }
+
+  .bar_5 {
+    width: 62.125%; }
+
+  .bar_6 {
+    width: 74.75%; }
+
+  .bar_7 {
+    width: 87.375%; }
+
+  .bar_8 {
+    margin-left: 0;
+    width: 100%; } }
+@media all and (min-width: 1360px) {
+  .col {
+    margin-left: 1%;
+    padding: 0 1%; }
+
+  .row .col:first-child {
+    margin-left: 0; }
+
+  /* set widths of bars/columns*/
+  .bar_1 {
+    width: 11.625%; }
+
+  .bar_2 {
+    width: 24.25%; }
+
+  .bar_3 {
+    width: 36.875%; }
+
+  .bar_4 {
+    width: 49.5%; }
+
+  .bar_5 {
+    width: 62.125%; }
+
+  .bar_6 {
+    width: 74.75%; }
+
+  .bar_7 {
+    width: 87.375%; }
+
+  .bar_8 {
+    margin-left: 0;
+    width: 100%; } }
+.border {
+  border: solid black 1px; }
+
+/*# sourceMappingURL=style.css.map */

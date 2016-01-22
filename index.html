@@ -4,14 +4,42 @@
 	<title></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="juke.js"></script>
+	<link rel="stylesheet" type="text/css" href="juke.css">
 </head>
 <body>
 	<div class="container">
-        <div class="row">
-                <div class="col"></div>
-        </div>
-    </div>
+		<div style="overflow: auto;" class="row outline">
+			<div class="column-25 outline h-200 bg-image play_button">
+
+			</div>
+			<div class="column-75 outline h-200">
+				<div style="vertical-align: middle;" class="inline-rectangle outline">
+					<audio id="audio" autoplay preload="auto" tabindex="0" controls="" type="audio/mpeg">
+						<source type="audio/mp3" src="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d2t02.mp3">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<div style="overflow: auto;" class="row outline">
+			<div class="column-25 outline h-600">
+				<ul class="tracks">
+					<li class="active"><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d2t02.mp3">Damn Sam - Ryan Adams</a></li>
+					<li><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t07.mp3">She Wants To Play Hearts - Ryan Adams</a></li>
+					<li><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t10.mp3">Harder Now That Its Over - Ryan Adams</a></li>
+				</ul>
+			</div>
+			<div class="column-75 outline h-600">
+				<div class="column-50 outline h-600">
+
+				</div>
+				<div class="column-50 outline h-600">
+
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

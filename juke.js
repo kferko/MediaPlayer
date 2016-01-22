@@ -69,5 +69,3 @@ console.log(juke.currentSong);
 // 	juke.next();
 // })
 
-
-
