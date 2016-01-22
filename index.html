@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="juke.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="buttons.js"></script>
 </head>
 <body>
 	<div class="container">
-        <div class="row">
-                <div class="col"></div>
-        </div>
-    </div>
+		<div class="playing_div">
+				<div class="prevbutt"></div>
+				<div class="playbutt"></div>
+				<div class="pausebutt"></div>
+				<div class="nextbutt"></div>
+		</div>
+		<div class="pldiv" id="radams1">
+				<ul>
+				</ul>
+		</div>
+		<div class="pldiv" id="radams2">
+				<ul>
+				</ul>
+		</div>
+		<div id="songlist">
+				<ul>
+				</ul>
+		</div>
+	</div>
+	<script src="song.js"></script>
+	<script src="playlistdiv.js"></script>
+	<script src="juke.js"></script>
 </body>
 </html>
