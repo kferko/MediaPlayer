@@ -3,9 +3,11 @@ function Jukebox(){
 	this.currentIndex = 0;
 	this.currentSong;
 	this.addSongs = function(playlist){
+		// for a single song 
 		if(this.playlist.length == 0){
 			this.setSong(playlist[0]);
 		}
+		// for a list of songs
 		for(var i =0; i < playlist.length; i++){
 			this.playlist.push(playlist[i]);
 		}
@@ -16,6 +18,7 @@ function Jukebox(){
 	this.play = function(){
 		if(this.currentSong){
 		this.currentSong.play();
+		// determine if the current song is over and play the next - call next function
 		this.currentSong.addEventListener('ended', function(){
 		this.next();
 		});

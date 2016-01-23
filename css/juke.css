@@ -6,7 +6,7 @@
 
 .playing_div {
 	width: 400px;
-	height: 200px;
+	height: 80px;
 	border: solid black 2px;
 }
 
@@ -33,7 +33,7 @@
 	padding: 15px 15px;
 	width:50px;
 	height:50px;
-	background: url(play.svg) no-repeat center;
+	background: url(img/play.svg) no-repeat center;
 	background-size: cover;
 }
 .pausebutt {
@@ -41,7 +41,7 @@
 	padding: 15px 15px;
 	width:50px;
 	height:50px;
-    background: url(pause.svg) no-repeat center;
+    background: url(img/pause.svg) no-repeat center;
 	background-size: cover;
 }
 .nextbutt {
@@ -49,7 +49,7 @@
 	padding: 15px 15px;
 	width:50px;
 	height:50px;
-    background: url(next.svg) no-repeat center;
+    background: url(img/next.svg) no-repeat center;
 	background-size: cover;
 }
 .prevbutt {
@@ -57,17 +57,17 @@
 	padding: 15px 15px;
 	width:50px;
 	height:50px;
-    background: url(next.svg) no-repeat center;
+    background: url(img/next.svg) no-repeat center;
 	background-size: cover;
 }
 .pldiv {
-	width:300px;
-	height:400px;
+	width:400px;
+	height:50px;
 	background-color: rgb(255,113,238);
 }
 #songlist {
-	width:300px;
-	height:400px;
+	width:400px;
+	height:150px;
 	background-color: rgb(42,190,255);
 }
 

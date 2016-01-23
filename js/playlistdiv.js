@@ -19,10 +19,11 @@ $("#radams2").click(function(){
 	}
 });
 
+// click a song in the list and make it the current song
 $("ul").on('click', 'li.item', function(){
-	// click a song in the list and make it the current song
+	// pause the current song first
 	juke.currentSong.pause();
-	// find the current index of the song and set it to be the current song
+	// find the current index of the song in the list and set it to be the current song
 	juke.currentIndex = ($(this).index());
 	juke.setSong(juke.playlist[juke.currentIndex]);
 	juke.play();
