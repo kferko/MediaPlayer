@@ -1,23 +1,23 @@
 $(document).ready(function(){
-	$(".playbutt").click(function(e){
+	$("#playb").click(function(e){
 		e.preventDefault();
 		juke.play();
 		console.log(juke.currentSong);
-		$('.playbutt').hide();
-		$('.pausebutt').show().css( "display", "inline-block");
+		// $('#playb').fadeTo(0.1);
+		// $('.pause').show().css( "display", "inline-block");
 	});
-	$(".pausebutt").click(function(e){
+	$("#pauseb").click(function(e){
 		e.preventDefault();
 		juke.pause();
-		$('.pausebutt').hide();
-		$('.playbutt').show();
+		// $('.pause').hide();
+		// $('.play').show();
 	});
-	$(".prevbutt").click(function(e){
+	$("#prevb").click(function(e){
 		e.preventDefault();
 		juke.previous();
 		console.log(juke.currentSong);
 	});
-	$(".nextbutt").click(function(e){
+	$("#nextb").click(function(e){
 		e.preventDefault();
 		juke.next();
 		console.log(juke.currentSong);

@@ -1,10 +1,10 @@
-.play_button {
-  background: url("../download.svg") no-repeat center;
-  background-size: contain; }
+body {
+  background: rgb(0,0,0); }
 
 .container {
-  width: 900px;
-  margin: 0 auto; }
+  width: 95%;
+  margin: 0 auto;
+  background: rgba(0,0,0, 0.5); }
 
 .row {
   overflow: auto;
@@ -71,6 +71,7 @@
 
   .container {
     width: 600px; } }
+
 @media all and (max-width: 600px) {
   .column-25 {
     width: 100%;
@@ -82,13 +83,21 @@
 
   .container {
     width: 350px; } }
+
 .outline {
-  outline: solid #2D643F 10px; }
+  outline: solid rgba(255,255,255, 0.2) 1px; }
 
 .h-200 {
   height: 200px; }
 
 .h-600 {
   height: 600px; }
+
+.h-12half {
+  height: 11.25vw;
+}
+.h-25 {
+  height: 22.5vw;
+}
 
 /*# sourceMappingURL=main.css.map */

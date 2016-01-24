@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title> P L Y R </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/juke.js"></script>
+	<script src="js/jquery.youtubebackground.js"></script>
+	<script src="js/buttons.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/juke.css">
+	<link rel="stylesheet" type="text/css" href="css/albums.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link href='https://fonts.googleapis.com/css?family=Exo:400,200,500,700,600,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div id="video"></div>
+	<div id="vidoverlay1"></div>
 	<div class="container">
-		<div style="overflow: auto;" class="row outline">
-			<div class="column-25 outline h-200 bg-image play_button">
-
+		<div style="overflow: auto;" class="row">
+			<div class="topdisplay column-25 h-25">
+				<div id="plyrbutts">
+					<div id="playb"></div>
+					<div id="pauseb"></div>
+					<div id="prevb"></div>
+					<div id="nextb"></div>
+				</div>
+				<div id="albumart1"></div>
+				<div id="albumart2"></div>
 			</div>
-			<div class="column-75 outline h-200">
-				<div style="vertical-align: middle;" class="inline-rectangle outline">
-					<audio id="audio" autoplay preload="auto" tabindex="0" controls="" type="audio/mpeg">
-						<source type="audio/mp3" src="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d2t02.mp3">
-					</audio>
+			<div class="column-75 h-25">
+				<div id="bigdisplay">
+				<div class="plyrlogo"></div>
+				<div id="nowplay"><h2>now playing</h2></div>
+				<div id="nowplaydis"></div>
+				<div id="bigdisplay_bnr"></div>
 				</div>
 			</div>
 		</div>
 		<div style="overflow: auto;" class="row outline">
 			<div class="column-25 outline h-600">
-				<ul class="tracks">
-					<li class="active"><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d2t02.mp3">Damn Sam - Ryan Adams</a></li>
-					<li><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t07.mp3">She Wants To Play Hearts - Ryan Adams</a></li>
-					<li><a href="https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t10.mp3">Harder Now That Its Over - Ryan Adams</a></li>
-				</ul>
+				<h1>my playlist</h1>
+				<div id="songlist">
+					<ul>
+					</ul>
+				</div>
 			</div>
 			<div class="column-75 outline h-600">
-				<div class="column-50 outline h-600">
-
+				<div class="column-25 outline h-600">
+					<div id="pldiv1">
+						<div id="radams1">
+							Ryan Adams Live 1
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv2">
+						<div id="radams2">
+							Ryan Adams Live 2
+							<ul></ul>
+						</div>
+					</div>
 				</div>
-				<div class="column-50 outline h-600">
-
+				<div class="column-25 outline h-600">
+					<div id="pldiv1">
+						<div id="radams1">
+							Ryan Adams Live 1
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv2">
+						<div id="radams2">
+							Ryan Adams Live 2
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+				<div class="column-25 outline h-600">
+					<div id="pldiv1">
+						<div id="radams1">
+							Ryan Adams Live 1
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv2">
+						<div id="radams2">
+							Ryan Adams Live 2
+							<ul></ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="js/song.js"></script>
+	<script src="js/playlistdiv.js"></script>
+	<script src="js/juke.js"></script>
 </body>
 </html>
