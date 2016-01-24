@@ -1,0 +1,81 @@
+#plyrbutts {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	margin:7% 5% 5% 5%;
+}
+
+
+#playb {
+	width: 50%;
+	height: 50%;
+	/*margin: 5%;*/
+	top: 22%;
+	left:-12%;
+	background: url(../img/playb2.svg) no-repeat center;
+  	background-size: contain;
+  	opacity: 0.2;
+  	position: absolute;
+  	transition: .3s;
+  	z-index: 2;
+  	transform: rotate(45deg);
+}
+#playb:hover {
+	opacity: 0.9;
+	transition: .3s;
+}
+#pauseb {
+	width: 50%;
+	height: 50%;
+	/*margin: 5%;*/
+	top: 22%;
+	left:62%;
+	background: url(../img/pauseb2.svg) no-repeat center;
+  	background-size: contain;
+  	opacity: 0.2;
+  	position: absolute;
+  	transition: .3s;
+  	z-index: 2;
+  	transform: rotate(-135deg);
+}
+#pauseb:hover {
+	opacity: 0.9;
+	transition: .3s;
+}
+#nextb {
+	width: 50%;
+	height: 50%;
+	/*margin: 5%;*/
+	top: -15%;
+	left:25%;
+	background: url(../img/nxtprvb2.svg) no-repeat center;
+  	background-size: contain;
+  	opacity: 0.2;
+  	position: absolute;
+  	transition: .3s;
+  	z-index: 2;
+  	transform: rotate(135deg);
+}
+#nextb:hover {
+	opacity: 0.9;
+	transition: .3s;
+}
+#prevb {
+	width: 50%;
+	height: 50%;
+	/*margin: 5%;*/
+	top: 60%;
+	left: 25%;
+	background: url(../img/nxtprvb2.svg) no-repeat center;
+  	background-size: contain;
+  	opacity: 0.2;
+  	position: absolute;
+  	transition: .3s;
+  	z-index: 2;
+  	transform: rotate(-45deg);
+}
+#prevb:hover {
+	opacity: 0.9;
+	transition: .3s;
+}
+

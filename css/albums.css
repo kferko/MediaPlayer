@@ -1,0 +1,16 @@
+#albumart1 {
+	display:none;
+	width:90%;
+	height:90%;
+	margin:5%;
+	background: url(../img/radams1_cvr.jpg) no-repeat center;
+	background-size: cover;
+}
+#albumart2 {
+	display:none;
+	width:90%;
+	height:90%;
+	margin:5%;
+	background: url(../img/radams2_cvr.jpg) no-repeat center;
+	background-size: cover;
+}
