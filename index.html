@@ -12,88 +12,37 @@
 	<link rel="stylesheet" type="text/css" href="css/albums.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/intro.css">
 	<link href='https://fonts.googleapis.com/css?family=Exo:400,200,500,700,600,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="video"></div>
+	<div id="video1"></div>
 	<div id="vidoverlay1"></div>
+	<div class="introp"></div>
+	<div class="introl"></div>
+	<div class="introy"></div>
+	<div class="intror"></div>
+	<div class="arrowr"></div>
+	<div class="arrowl"></div>
+	<div class="arrowt"></div>
+	<div class="arrowb"></div>
 	<div class="container">
-		<div style="overflow: auto;" class="row">
-			<div class="topdisplay column-25 h-25">
-				<div id="plyrbutts">
-					<div id="playb"></div>
-					<div id="pauseb"></div>
-					<div id="prevb"></div>
-					<div id="nextb"></div>
-				</div>
-				<div id="albumart1"></div>
-				<div id="albumart2"></div>
-			</div>
-			<div class="column-75 h-25">
-				<div id="bigdisplay">
-				<div class="plyrlogo"></div>
-				<div id="nowplay"><h2>now playing</h2></div>
-				<div id="nowplaydis"></div>
-				<div id="bigdisplay_bnr"></div>
-				</div>
-			</div>
-		</div>
-		<div style="overflow: auto;" class="row outline">
-			<div class="column-25 outline h-600">
-				<h1>my playlist</h1>
-				<div id="songlist">
-					<ul>
-					</ul>
-				</div>
-			</div>
-			<div class="column-75 outline h-600">
-				<div class="column-25 outline h-600">
-					<div id="pldiv1">
-						<div id="radams1">
-							Ryan Adams Live 1
-							<ul></ul>
-						</div>
-					</div>
-					<div id="pldiv2">
-						<div id="radams2">
-							Ryan Adams Live 2
-							<ul></ul>
-						</div>
-					</div>
-				</div>
-				<div class="column-25 outline h-600">
-					<div id="pldiv1">
-						<div id="radams1">
-							Ryan Adams Live 1
-							<ul></ul>
-						</div>
-					</div>
-					<div id="pldiv2">
-						<div id="radams2">
-							Ryan Adams Live 2
-							<ul></ul>
-						</div>
-					</div>
-				</div>
-				<div class="column-25 outline h-600">
-					<div id="pldiv1">
-						<div id="radams1">
-							Ryan Adams Live 1
-							<ul></ul>
-						</div>
-					</div>
-					<div id="pldiv2">
-						<div id="radams2">
-							Ryan Adams Live 2
-							<ul></ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
+	<script src="js/video.js"></script>
 	<script src="js/song.js"></script>
 	<script src="js/playlistdiv.js"></script>
 	<script src="js/juke.js"></script>
+	<script>$("body").fadeIn(4000).delay(18000).fadeOut(4000);</script>
+	<script>$("#video1").delay(20000).fadeOut(4000);</script>
+	<script>$("#vidoverlay1").delay(20000).fadeOut(4000);</script>
+	<script>$(".arrowr").delay(4200).fadeIn(500).delay(1400).fadeOut(500);</script>
+	<script>$(".arrowl").delay(4700).fadeIn(500).delay(2700).fadeOut(500);</script>
+	<script>$(".arrowt").delay(5200).fadeIn(500).delay(3200).fadeOut(500);</script>
+	<script>$(".arrowb").delay(5700).fadeIn(500).delay(4700).fadeOut(500);</script>
+	<script>$(".introp").delay(6500).fadeIn(500);</script>
+	<script>$(".introl").delay(8000).fadeIn(500);</script>
+	<script>$(".introy").delay(9500).fadeIn(500);</script>
+	<script>$(".intror").delay(11000).fadeIn(500);</script>
+	<script>setTimeout(function(){window.location.href='plyr.html'},26000);</script>
 </body>
 </html>

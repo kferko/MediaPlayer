@@ -1,0 +1,11 @@
+.arrowr {
+	display:inline;
+	width:20%;
+	height:40%;
+	top:0;
+	left:0;
+	background: url(../img/introarrow.svg) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	z-index: 2;
+}
