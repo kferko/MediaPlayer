@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> P L Y R </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery.youtubebackground.js"></script>
+	<script src="js/buttons.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/juke.css">
+	<link rel="stylesheet" type="text/css" href="css/albums.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link href='https://fonts.googleapis.com/css?family=Exo:400,200,500,700,600,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="video2"></div>
+	<div id="vidoverlay2"></div>
+	<div class="plyrlogo"></div>
+	<div class="container">
+		<div style="overflow: auto;" class="row">
+			<div class="topdisplay column-25 h-25 pad">
+				<div id="plyrbutts">
+					<div id="playb"></div>
+					<div id="pauseb"></div>
+					<div id="prevb"></div>
+					<div id="nextb"></div>
+				</div>
+				<div id="albumart1"></div>
+				<div id="albumart2"></div>
+				<div id="winbkg"></div>
+			</div>
+			<div class="column-75 h-25">
+				<div id="bigdisplay">
+				<div id="nowplay"><h2>now playing</h2></div>
+				<div id="nowplaydis"></div>
+				<div id="bigdisplay_bnr"></div>
+				</div>
+				<div id="winbkg"></div>
+			</div>
+		</div>
+		<div style="overflow: auto;" class="row">
+			<div class="column-25 h-400">
+				<div id="plyrbkg"></div>
+				<h1>my playlist</h1>
+				<div id="songlist">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div class="column-75 h-400">
+			<div id="selectbkg"></div>
+				<div class="column-25 h-400">
+					<div id="pldiv1">
+						<div id="radams1">
+							Palace at Auburn Hills P.1
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv2">
+						<div id="radams2">
+							Palace at Auburn Hills P.2
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv3">
+						<div id="radams3">
+							Palace at Auburn Hills P.3
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv4">
+						<div id="radams4">
+							Palace at Auburn Hills P.4
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+				<div class="column-25 h-400">
+					<div id="pldiv1">
+						<div id="radams1">
+							Ryan Adams Live 1
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv2">
+						<div id="radams2">
+							Ryan Adams Live 2
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+				<div class="column-25 h-400">
+					<div id="pldiv1">
+						<div id="radams1">
+							Ryan Adams Live 1
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv2">
+						<div id="radams2">
+							Ryan Adams Live 2
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+				<div class="column-25 h-400">
+					<div id="pldiv1">
+						<div id="radams1">
+							Ryan Adams Live 1
+							<ul></ul>
+						</div>
+					</div>
+					<div id="pldiv2">
+						<div id="radams2">
+							Ryan Adams Live 2
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/video.js"></script>
+	<script src="js/song.js"></script>
+	<script src="js/playlistdiv.js"></script>
+	<script src="js/juke.js"></script>
+	<script>$("body").fadeIn(2000);</script>
+	<script>$(".plyrlogo").delay(2100).fadeIn(1000);</script>
+	<script>$(".container").delay(3200).fadeIn(800);</script>
+</body>
+</html>

@@ -1,3 +1,26 @@
+#winbkg {
+	z-index:-1;
+	width:95%;
+	height:95%;
+	margin:2.5%;
+	background: rgba(0,0,0, 0.5);
+}
+#plyrbkg {
+	position: absolute;
+	z-index:-1;
+	width:22.5%;
+	height:57%;
+	margin: .72%;
+	background: rgba(0,0,0, 0.7);
+}
+#selectbkg {
+	position: absolute;
+	z-index:-1;
+	width:69.9%;
+	height:57%;
+	margin: .72%;
+	background: rgba(0,0,0, 0.2);
+}
 .playing_div {
 	width:92%;
 	height:5%;
@@ -45,11 +68,12 @@
     background: url(../img/next.svg) no-repeat center;
 }
 
-#pldiv1, #pldiv2 {
+#pldiv1, #pldiv2, #pldiv3, #pldiv4 {
 	width:94%;
 	height: 30px;
 	padding-top: 3%;
-	margin: 4% 3% 12% 3%;
+	padding-bottom: 3%;
+	margin: 10% 3% 10% 3%;
 	/*background: rgba(255,255,255, 0.4);*/
 	font-family: 'Exo', sans-serif;
 	font-weight: 500;
@@ -64,7 +88,7 @@ ul {
 li {
 	font-family: 'Exo', sans-serif;
 	font-weight: 200;
-	font-size: 1em;
+	font-size: 0.8em;
 	color: rgb(255,255,255);
 	line-height: 2.25em;
 }
@@ -77,13 +101,12 @@ p {
 #songlist {
 	width:92%;
 	height:50%;
-	margin: 2% 4% 6% 4%;
+	margin: -10% 4% 6% 4%;
 	padding-top: 3%;
 	font-family: 'Exo', sans-serif;
 	font-weight: 200;
 	color: rgb(255,255,255);
-	/*background: rgba(255,255,255, 0.1);*/
-	/*outline: solid rgba(255,255,255, 0.4) 1px;*/
+	z-index: 4;
 }
 
 /* background video aspects*/
@@ -94,25 +117,47 @@ p {
 	top: 0;
 	left: 0;
 	margin:0;
+	background: url(../img/land_bkg.jpg) no-repeat center;
+	opacity: 0.4;
+	z-index: -1;
+}
+#vidoverlay2 {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	margin:0;
 	background: url(../img/music_bkg.jpg) no-repeat center;
 	z-index: -1;
 }
-#video{
+#video1 {
  	position: relative;
  	background: transparent;
  	z-index: -2;
+ 	top: 0;
+	left: 0;
+ 	margin:0;
+}
+#video2 {
+ 	position: relative;
+ 	background: transparent;
+ 	z-index: -2;
+ 	top: 0;
+	left: 0;
  	margin:0;
 }
 .ytplayer-container{
  	position: absolute;
  	top: 0;
+ 	left: 0;
  	z-index: -3;
  	margin:0;
 }
 #bigdisplay {
-	width:100%;
-	height:100%;
-	/*background: url(../img/radams_bnr.jpg) no-repeat center;*/
+	width:98%;
+	height:94.5%;
+	margin:1%;
 	position: relative;
 }
 #bigdisplay_bnr {
@@ -124,20 +169,20 @@ p {
 	z-index: 1;
 }
 #nowplay {
-	width:20%;
+	width:24%;
 	height: 17%;
-	left:0%;
+	left:1%;
 	/*background: rgba(255,255,255, 0.7);*/
 	position: absolute;
-    bottom: 4%;
+    bottom: 6%;
     text-align:center;
     z-index: 4;
 }
 #nowplaydis {
-	width:80%;
+	width:74%;
 	height: 17%;
 	right:0%;
-	background: rgba(255,255,255, 0.3);
+	background: rgba(255,255,255, 0.6);
 	position: absolute;
     bottom: 4%;
     z-index: 4;
@@ -147,10 +192,11 @@ p {
 
 }
 .plyrlogo {
-	width:65%;
-	height:65%;
-	top:6%;
-	right:-20%;
+	display:none;
+	width:25%;
+	height:25%;
+	top:4%;
+	right:6%;
 	background: url(../img/plyr_bw_logo.svg) no-repeat center;
 	z-index: 4;
 	position: absolute;

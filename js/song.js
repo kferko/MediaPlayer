@@ -24,3 +24,21 @@ var radams2 =[adams5,adams6];
 	for (var i = 0; i < radams2.length; i++){
 		$("#radams2").find("ul").append("<li>" + radams2[i].name + "</li>");
 	}
+
+// create another playlist
+var adams7 = new Song("Hallelujah", "https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t03.mp3");
+var adams8 = new Song("New York, New York", "https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t06.mp3");
+// name the playlist to be added and its elements
+var radams3 =[adams7,adams8];
+	for (var i = 0; i < radams3.length; i++){
+		$("#radams3").find("ul").append("<li>" + radams3[i].name + "</li>");
+	}
+
+// create another playlist
+var adams9 = new Song("Hallelujah", "https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t03.mp3");
+var adams10 = new Song("New York, New York", "https://archive.org/download/ryanadams2006-10-17.sbd.flac16/ryanadams2006-10-17.sbd.d1t06.mp3");
+// name the playlist to be added and its elements
+var radams4 =[adams9,adams10];
+	for (var i = 0; i < radams4.length; i++){
+		$("#radams4").find("ul").append("<li>" + radams4[i].name + "</li>");
+	}

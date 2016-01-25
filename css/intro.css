@@ -1,0 +1,101 @@
+.arrowr {
+	display:none;
+	width:166px;
+	height:331px;
+	top:30%;
+	left:38%;
+	margin:0;
+	background: url(../img/introarrow.svg) no-repeat center;
+	background-size: cover;
+	z-index: 4;
+	position: absolute;
+}
+.arrowl {
+	display:none;
+	width:166px;
+	height:331px;
+	top:30%;
+	right:38%;
+	margin:0;
+	background: url(../img/introarrow.svg) no-repeat center;
+	background-size: cover;
+	z-index: 4;
+	position: absolute;
+	transform: rotate(180deg);
+}
+.arrowt {
+	display:none;
+	width:166px;
+	height:331px;
+	top:18.5%;
+	left:44.75%;
+	margin:0;
+	background: url(../img/introarrow.svg) no-repeat center;
+	background-size: cover;
+	z-index: 4;
+	position: absolute;
+	transform: rotate(90deg);
+}
+.arrowb {
+	display:none;
+	width:166px;
+	height:331px;
+	bottom:21%;
+	left:44.75%;
+	margin:0;
+	background: url(../img/introarrow.svg) no-repeat center;
+	background-size: cover;
+	z-index: 4;
+	position: absolute;
+	transform: rotate(270deg);
+}
+
+/* letter forms */
+.introp {
+	display:none;
+	width:500px;
+	height:500px;
+	top:20.5%;
+	left:34.15%;
+	margin:0;
+	background: url(../img/introp.svg) no-repeat center;
+	background-size: cover;
+	z-index: 5;
+	position: absolute;
+}
+.introl {
+	display:none;
+	width:500px;
+	height:500px;
+	top:20.56%;
+	left:34.54%;
+	margin:0;
+	background: url(../img/introl.svg) no-repeat center;
+	background-size: cover;
+	z-index: 5;
+	position: absolute;
+}
+.introy {
+	display:none;
+	width:500px;
+	height:500px;
+	top:22%;
+	left:34.35%;
+	margin:0;
+	background: url(../img/introy.svg) no-repeat center;
+	background-size: cover;
+	z-index: 5;
+	position: absolute;
+}
+.intror {
+	display:none;
+	width:500px;
+	height:500px;
+	top:19.5%;
+	left:34.35%;
+	margin:0;
+	background: url(../img/intror.svg) no-repeat center;
+	background-size: cover;
+	z-index: 5;
+	position: absolute;
+}

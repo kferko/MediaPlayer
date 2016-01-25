@@ -21,7 +21,28 @@ $("#radams2").click(function(){
   $("#albumart1").fadeToggle();
   $("#albumart2").fadeIn("slow");
 });
-
+$("#radams3").click(function(){
+	// call the addSong function
+	juke.addSongs(radams2);
+	// console.log(juke.currentSong);
+	// get the name of the song and add it to our playlist
+	for (var i = 0; i < radams3.length; i++){
+		$("#songlist").find("ul").append("<li class='item'>" + radams3[i].name + "</li>");
+	}
+  $("#albumart1").fadeToggle();
+  $("#albumart2").fadeIn("slow");
+});
+$("#radams4").click(function(){
+	// call the addSong function
+	juke.addSongs(radams2);
+	// console.log(juke.currentSong);
+	// get the name of the song and add it to our playlist
+	for (var i = 0; i < radams4.length; i++){
+		$("#songlist").find("ul").append("<li class='item'>" + radams4[i].name + "</li>");
+	}
+  $("#albumart1").fadeToggle();
+  $("#albumart2").fadeIn("slow");
+});
 // click a song in the list and make it the current song
 $("ul").on('click', 'li.item', function(){
 	// pause the current song first
@@ -38,48 +59,47 @@ $("ul").on('click', 'li.item', function(){
 
 $('#pldiv1').on({
     mouseenter: function() {
-      $(this).css({border: '0 solid rgba(255,255,255, 0.4)'}).animate({borderWidth: 1});
-      $(this).animate({height:$('#radams1').height(),}), 500;},
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams1').height(),}), 500;
+      $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
     mouseleave: function() {
+   	  $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
       $(this).animate({height:30}), 500;
-      $(this).animate({borderWidth: 0});
-    }
+      $(this).css({background: ''}), 500;},
 });
 $('#pldiv2').on({
     mouseenter: function() {
-      $(this).css({border: '0 solid rgba(255,255,255, 0.4)'}).animate({borderWidth: 1});
-      $(this).animate({height:$('#radams2').height(),}), 500;},
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams2').height(),}), 500;
+  	  $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
     mouseleave: function() {
       $(this).animate({height:30}), 500;
-      $(this).animate({borderWidth: 0});
+      $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
+      $(this).css({background: ''}), 500;
     }
 });
-
-// full screen background - youtube video
-$('#video').YTPlayer({
-    fitToBackground: true,
-    videoId: 'SL6d4rQJsQY',
-    playerVars: {
-      modestbranding: 0,
-      autoplay: 1,
-      controls: 0,
-      showinfo: 0,
-      branding: 0,
-      rel: 0,
-      autohide: 0,
-      loopPlaylists: false,
-      start: 10
+$('#pldiv3').on({
+    mouseenter: function() {
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams2').height(),}), 500;
+  	  $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
+    mouseleave: function() {
+      $(this).animate({height:30}), 500;
+      $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
+      $(this).css({background: ''}), 500;
     }
 });
-
-// image over top of bkg video fade up and down over time
-var vol1 = $('#vidoverlay1');
-function fadeIt() {
-       vol1.animate({opacity:'0.4'}, 5000);
-       vol1.animate({opacity:'0.1'}, 2000);
-       vol1.animate({opacity:'0.6'}, 8000, fadeIt);
+$('#pldiv4').on({
+    mouseenter: function() {
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams2').height(),}), 500;
+  	  $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
+    mouseleave: function() {
+      $(this).animate({height:30}), 500;
+      $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
+      $(this).css({background: ''}), 500;
     }
-fadeIt();
+});
 
 
 
