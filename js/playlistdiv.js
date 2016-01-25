@@ -23,7 +23,7 @@ $("#radams2").click(function(){
 });
 $("#radams3").click(function(){
 	// call the addSong function
-	juke.addSongs(radams2);
+	juke.addSongs(radams3);
 	// console.log(juke.currentSong);
 	// get the name of the song and add it to our playlist
 	for (var i = 0; i < radams3.length; i++){
@@ -34,12 +34,34 @@ $("#radams3").click(function(){
 });
 $("#radams4").click(function(){
 	// call the addSong function
-	juke.addSongs(radams2);
+	juke.addSongs(radams4);
 	// console.log(juke.currentSong);
 	// get the name of the song and add it to our playlist
 	for (var i = 0; i < radams4.length; i++){
 		$("#songlist").find("ul").append("<li class='item'>" + radams4[i].name + "</li>");
 	}
+  $("#albumart1").fadeToggle();
+  $("#albumart2").fadeIn("slow");
+});
+$("#radams5").click(function(){
+  // call the addSong function
+  juke.addSongs(radams5);
+  // console.log(juke.currentSong);
+  // get the name of the song and add it to our playlist
+  for (var i = 0; i < radams5.length; i++){
+    $("#songlist").find("ul").append("<li class='item'>" + radams5[i].name + "</li>");
+  }
+  $("#albumart1").fadeToggle();
+  $("#albumart2").fadeIn("slow");
+});
+$("#radams6").click(function(){
+  // call the addSong function
+  juke.addSongs(radams6);
+  // console.log(juke.currentSong);
+  // get the name of the song and add it to our playlist
+  for (var i = 0; i < radams6.length; i++){
+    $("#songlist").find("ul").append("<li class='item'>" + radams6[i].name + "</li>");
+  }
   $("#albumart1").fadeToggle();
   $("#albumart2").fadeIn("slow");
 });
@@ -81,7 +103,7 @@ $('#pldiv2').on({
 $('#pldiv3').on({
     mouseenter: function() {
       $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
-      $(this).animate({height:$('#radams2').height(),}), 500;
+      $(this).animate({height:$('#radams3').height(),}), 500;
   	  $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
     mouseleave: function() {
       $(this).animate({height:30}), 500;
@@ -92,7 +114,7 @@ $('#pldiv3').on({
 $('#pldiv4').on({
     mouseenter: function() {
       $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
-      $(this).animate({height:$('#radams2').height(),}), 500;
+      $(this).animate({height:$('#radams4').height(),}), 500;
   	  $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
     mouseleave: function() {
       $(this).animate({height:30}), 500;
@@ -100,8 +122,50 @@ $('#pldiv4').on({
       $(this).css({background: ''}), 500;
     }
 });
-
-
+$('#pldiv5').on({
+    mouseenter: function() {
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams5').height(),}), 500;
+      $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
+    mouseleave: function() {
+      $(this).animate({height:30}), 500;
+      $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
+      $(this).css({background: ''}), 500;
+    }
+});
+$('#pldiv6').on({
+    mouseenter: function() {
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams6').height(),}), 500;
+      $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
+    mouseleave: function() {
+      $(this).animate({height:30}), 500;
+      $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
+      $(this).css({background: ''}), 500;
+    }
+});
+$('#pldiv7').on({
+    mouseenter: function() {
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams7').height(),}), 500;
+      $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
+    mouseleave: function() {
+      $(this).animate({height:30}), 500;
+      $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
+      $(this).css({background: ''}), 500;
+    }
+});
+$('#pldiv8').on({
+    mouseenter: function() {
+      $(this).css({outline: '1px solid rgba(255,255,255, 0.4)'}).animate();
+      $(this).animate({height:$('#radams8').height(),}), 500;
+      $(this).css({background: 'rgba(0,0,0, 0.7)'}),500;},
+    mouseleave: function() {
+      $(this).animate({height:30}), 500;
+      $(this).css({outline: '0px solid rgba(255,255,255, 0.4)'}).animate()
+      $(this).css({background: ''}), 500;
+    }
+});
 
 
 

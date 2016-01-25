@@ -16,4 +16,25 @@ h2 {
 	letter-spacing: .35em;
 	margin-top:8%;
 }
-
+h3 {
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: rgba(0,0,0,0.9);
+	text-transform: uppercase;
+	letter-spacing: .35em;
+	text-align:left;
+	/*margin-top:8%;*/
+	margin-left: 3%;
+}
+h4 {
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+	font-size: .75em;
+	color: rgba(255,255,255,0.2);
+	text-transform: uppercase;
+	letter-spacing: .35em;
+	text-align:center;
+	/*margin-top:8%;*/
+	/*margin-left: 3%;*/
+}

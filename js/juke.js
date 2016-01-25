@@ -14,10 +14,14 @@ function Jukebox(){
 	}
 	this.setSong = function(song){
 		this.currentSong = new Audio(song.url);
+		// display current song in div
+		// $('#nowplaydis').html('<h3>' + song.name + '</h3>');
 	}
 	this.play = function(){
 		if(this.currentSong){
 		this.currentSong.play();
+		// display current song in div
+		$('#nowplaydis').html('<h3>' + this.playlist[this.currentIndex].name + '</h3>');
 		// determine if the current song is over and play the next - call next function
 		this.currentSong.addEventListener('ended', function(){
 		this.next();
@@ -61,6 +65,24 @@ function Jukebox(){
 			this.currentIndex ++;
 			this.setSong(this.playlist[this.currentIndex]);
 			this.play();
+		}
+	}
+
+	this.random = function(){
+		if (this.playlist.length >= 2){
+		// have to pause the current song
+		this.currentSong.pause();
+		var randomIndex = Math.floor(this.playlist.length * Math.random());
+		console.log(randomIndex);
+		this.setSong(this.playlist[randomIndex]);
+		// if the song is the same as the current song, randomize again
+		while (randomIndex == this.currentIndex){
+			randomIndex = Math.floor(this.playlist.length * Math.random());
+			console.log("inside loop: " + randomIndex);
+		}
+		this.currentIndex = randomIndex;
+		this.setSong(this.playlist[this.currentIndex]);
+		this.play();
 		}
 	}
 }
