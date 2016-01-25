@@ -22,4 +22,9 @@ $(document).ready(function(){
 		juke.next();
 		console.log(juke.currentSong);
 	});
+	$("#randomb").click(function(e){
+		e.preventDefault();
+		juke.random();
+		console.log(juke.currentSong);
+	});
 });
